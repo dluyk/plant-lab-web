@@ -6,6 +6,7 @@ body {
 .container {
     width: 300px;
     margin: 150px auto;
+    background-color: #121212;
 }
 
 h1 {
