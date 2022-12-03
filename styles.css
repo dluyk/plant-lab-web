@@ -1,11 +1,23 @@
 body {
-    font-family: 'futura-pt', 'Futura', sans-serif;
+    font-family: 'futura-pt', 'Futura', sans-serif;color: honeydew;
     background-color: #121212;
+    margin: 100px 0px 10px 0px;
 }
 
-.container {
-    width: 300px;
-    margin: 150px auto;
+.container-bgimage {
+    width: 100%;
+    margin: 0px auto;
+    background-image: url(./assets/trays.jpg);
+    background-size:cover;
+    border-top: .8px solid honeydew;
+    border-bottom: .8px solid honeydew;
+    
+}
+
+.container-plain {
+    width: 80%;
+    max-width: 500px;
+    margin: 60px auto;
 }
 
 h1 {
@@ -14,7 +26,7 @@ h1 {
     font-weight: 500;
     text-align: center;
     font-size: 3.5rem;
-    margin-bottom: 50px;  
+    margin-bottom: 60px;  
 }
 
 .tube-logo {
@@ -23,19 +35,49 @@ h1 {
 }
 
 .subtitle {
+    background-color: rgba(18, 18, 18, .6);
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: .08em;
     color: honeydew;
-    border-top: .8px solid honeydew;
-    border-bottom: .8px solid honeydew;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin:0;
+    padding-top: 70px;
+    padding-bottom: 70px;
     line-height: 2em;
 }
+
+.about {
+    font-family: 'freight-sans-pro', 'Freight Sans Pro', sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: justify;
+    hyphens: auto;
+}
+
 
 .caps {
     text-transform: uppercase;
     letter-spacing: .18em;
+    font-weight: 500;
 }
+
+.lede {
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: .9em;
+    color: rgb(190, 255, 255);
+        /* meg-blue */
+}
+
+footer {
+    color: rgba(240, 255, 240, .5);
+    width: 90%;
+    margin: 100px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
