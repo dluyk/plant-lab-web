@@ -7,7 +7,7 @@ body {
 .container-bgimage {
     width: 100%;
     margin: 0px auto;
-    background-image: url(./assets/trays.jpg);
+    background-image: url(./assets/trays-small.jpg);
     background-size:cover;
     border-top: .8px solid honeydew;
     border-bottom: .8px solid honeydew;
@@ -79,7 +79,7 @@ h1 {
 
 footer {
     color: rgba(240, 255, 240, .5);
-    width: 95%;
+    width: 92%;
     margin: 100px auto 10px;
     display: flex;
     justify-content: space-between;
