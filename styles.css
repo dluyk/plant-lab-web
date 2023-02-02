@@ -77,6 +77,15 @@ h1 {
         /* meg-blue */
 }
 
+.container-signup {
+    margin: 60px auto;
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 100px;
+}
+
+
+
 footer {
     color: rgba(240, 255, 240, .5);
     width: 92%;
