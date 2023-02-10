@@ -79,9 +79,9 @@ h1 {
 
 .container-signup {
     margin: 60px auto;
-    text-align: center;
-    padding-left: 120px;
+    padding-left: 100px;
     padding-right: 100px;
+    max-width: 500px;
 }
 
 
@@ -97,3 +97,7 @@ footer {
 
 
 
+/* mail chimp */
+#mc_embed_signup{clear:left;}
+#mc_embed_signup .helper_text{background-color:rgb(18, 18, 18, 0);}
+#mc_embed_signup .button{background-color: rgb(190, 255, 255); color:rgb(18, 18, 18); border-radius: 3%;}
