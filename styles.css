@@ -94,6 +94,9 @@ aside {
 .no-hyphen {
     hyphens:none;
 }
+.centered {
+    text-align: center;
+}
 
 /* footer */
 footer {
@@ -121,6 +124,22 @@ footer {
     background-color: rgb(18, 18, 18, .6);
     padding: 20px;
 }
+
+#call-to-action {
+    background-color: rgb(190, 255, 255);
+    color: rgb(18, 18, 18);
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .12em;
+    padding: .5em 1em;
+    border-radius: 3%;
+}
+
+#call-to-action:active {
+    background-color: rgb(18, 18, 18);
+    color:rgb(190, 255, 255);
+}
+
 .about {
     max-width: 500px;
     padding: 20px;
