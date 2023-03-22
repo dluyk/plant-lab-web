@@ -54,6 +54,27 @@ a:active {
     text-decoration: underline;
 }
 
+.sign-up-click {
+    display: block;
+    max-width: 180px;
+    text-align: center;
+    font-weight: 600;
+    padding: 4px;
+    color: rgb(18, 18, 18);
+    background-color: rgb(190, 255, 255);
+    margin: 10px 10px 50px 10px;
+    border-radius: 2%;
+}
+
+.sign-up-click:hover {
+    background-color: rgb(240, 255, 240);
+}
+
+.sign-up-click:active {
+    background-color: rgb(18, 18, 18);
+    color:rgb(190, 255, 255);
+}
+
 /* subheads */
 h1 {
     font-family: 'futura-pt', 'Futura', sans-serif;
@@ -133,6 +154,10 @@ footer {
     letter-spacing: .12em;
     padding: .5em 1em;
     border-radius: 3%;
+}
+
+#call-to-action:hover {
+    background-color: rgb(240, 255, 240);
 }
 
 #call-to-action:active {
