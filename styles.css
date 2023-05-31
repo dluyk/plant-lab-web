@@ -146,6 +146,7 @@ footer {
 }
 .headline {
     background-image: url(./assets/trays-small.jpg);
+    background-size: cover;
     border-bottom: 1px solid rgb(240, 255, 240);
     border-top: 1px solid rgb(240, 255, 240);
 }
