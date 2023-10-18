@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Plant Lab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/svg+xml" href="./assets/plant-tube.svg">
+        <link rel="stylesheet" href="https://use.typekit.net/jdc7ceh.css">
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="operations.html">Operations</a></li>
+                    <li><a href="farmstand.html">Farmstand</a></li>
+                    <li id="last-nav-item"><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Operations</h1>
+            <p class="overview">lorem ipsum</p>
+            <div class="tabs">
+                <details open>
+                    <summary>Indoor Produce</summary>
+                    <div class="tab-text">
+                        <p>lorem ipsum produce inside</p> 
+                    </div>
+                </details>
+                <details>
+                    <summary>Garden Seedlings</summary>
+                    <div class="tab-text">
+                        <p>lorem ipsum garden seedlings</p> 
+                    </div>
+                </details>
+                <details>
+                    <summary>Outdoor Growing</summary>
+                    <div class="tab-text">
+                        <p>lorem ipsum outside stuff</p> 
+                    </div>
+                </details>
+            </div>  
+        </main>
+        <script>
+            const details = document.querySelectorAll('details');
+            details.forEach((targetDetail) => {
+                targetDetail.addEventListener('click', () => {
+                    details.forEach((detail) => {
+                        if (detail !== targetDetail) {
+                            detail.removeAttribute('open');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
