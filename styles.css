@@ -21,36 +21,18 @@ main {
     min-height: 60vh;
 }
 
-/* header */
-.main-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding-left: 0;
-}
-.main-nav li {
-    padding: 0 10px;
-    font-size: .9rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: .15em;
-    border-right: solid 1px;
-}
-#last-nav-item {
-    border-right: none;
-}
+
 
 /* links */
 a {
-    text-decoration: none;
-    color: inherit;
+    color: rgb(0, 138, 138);
+    font-weight: bolder;
 }
 a:hover {
     text-decoration: underline;
+    text-decoration-color: rgb(190, 255, 255);
 }
 a:active {
-    color: rgb(190, 255, 255);
     text-decoration: underline;
 }
 
@@ -94,6 +76,35 @@ p {
     hyphens:none;
 }
 
+/* header */
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 0;
+}
+.main-nav li {
+    padding: 0 10px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .15em;
+    border-right: solid 1px;
+}
+#last-nav-item {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(240, 255, 240);
+    font-weight: normal;
+}
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 255, 240);
+}
 
 /* footer */
 footer {
@@ -142,19 +153,12 @@ footer {
     max-width: 400px;
 }
 
-.cover-link {
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.8);
-    border-radius: 3%;
-    width: 200px;
-    margin: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .08em;
-    color: rgb(18, 18, 18);
-    background-color: rgb(190, 255, 255, .8);
-    padding-top: 8px;
-    padding-bottom: 8px;
+.prompt-link {
+    color: rgb(190, 255, 255);
+}
+
+.prompt-link:hover {
+    text-decoration-color: rgb(0, 138, 138);
 }
 
 .paren {
@@ -267,4 +271,10 @@ footer {
 	right: 0;
     padding: 1em;
     background-color: rgb(240, 255, 240);
+}
+
+.set-in-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
 }
