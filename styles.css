@@ -66,9 +66,8 @@ p {
 }
 .lede {
     text-transform: uppercase;
-    letter-spacing: .12em;
-    font-size: 1rem;
-    font-weight: 600;
+    letter-spacing: .08em;
+    font-weight: 800;
     color: rgb(190, 255, 255);
 }
 
@@ -111,10 +110,17 @@ footer {
     color: rgba(240, 255, 240, .5);
     width: 92%;
     margin: 100px auto 10px;
-    display: flex;
     justify-content: space-between;
     align-items: flex-end;
     font-size: 1rem;
+
+}
+
+.copyright {
+    float: right;
+    margin-top: -32px;
+    margin-bottom: 20px;
+
 }
 
 /* homepage */
@@ -132,19 +138,25 @@ footer {
     max-width: 960px;
 }
 
+.image-overlay {
+    background-color: rgb(18, 18, 18, .5);
+}
+
 .cover {
     width: 90%;
     max-width: 700px;
     margin: auto;
-    background-color: rgb(18, 18, 18, .5);
     padding: 30px 10px;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 110%;
 }
 
-.prompt {
+/* .prompt {
  text-align: center;
  font-weight: 500;
  letter-spacing: .03em;
-}
+} */
 
 .cover-links-container{
     display: flex;
@@ -172,9 +184,11 @@ footer {
 }
 
 .email-signup {
-    margin-top: 100px;
+    margin: 100px auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
 
 /* accordion */
 .abstract, .qs {
@@ -250,6 +264,10 @@ footer {
     padding: 1em;
     text-transform: uppercase;
 }
+
+.tabs details > summary::-webkit-details-marker {
+    display: none;
+  }
 
 .tabs details {
     width: 33.33%;
