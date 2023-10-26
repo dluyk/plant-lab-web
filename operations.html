@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Plant Lab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/svg+xml" href="./assets/plant-tube.svg">
+        <link rel="stylesheet" href="https://use.typekit.net/jdc7ceh.css">
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="operations.html">Operations</a></li>
+                    <li><a href="farmstand.html">Farmstand</a></li>
+                    <li id="last-nav-item"><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Operations</h1>
+            <p class="overview">At Plant Lab everything is an experiment. Our primary focus is growing produce in our indoor facility. But we're also working on using all of our premises in creative ways and filling our little urban corner with as many plant-based ideas as we can.</p>
+            <div class="tabs">
+                <details open>
+                    <summary>Indoor Produce</summary>
+                    <div class="tab-text">
+                        <p>At Plant Lab all our food is grown using Controlled Environment Agriculture (CEA) which for us looks like indoor, year-round farming. We use a combination of traditional and hydroponic growing methods. Our aim is to grow clean, high-quality food that is good for the people who eat it, the people who grow it, and the environment. We carefully control the growing space so we don't need any pesticides or herbicides.  We have an extensive food safety plan and follow it closely. We are continually evaluating our inputs and processes, and actively looking for ways to make a better all-around impact on the environment.</p> 
+                        <img src="assets/trays-2.jpeg" alt="trays of microgreens growing indoors on stacked shelves under led lights" class="set-in-image">
+                        <p>Right now most of the produce items we grow are microgreens, leaf lettuce, or culinary herbs. You can get our produce on your table via our <a href="farmstand.html">farmstand</a>. We are always experimenting and looking to add new items to our production; if there is something specfifc you'd like to see grown in our neighborhood, we'd love to hear about it!</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Garden Seedlings</summary>
+                    <div class="tab-text">
+                        <p>In the spring we offer a selection of seedlings to help stock your garden: tomatoes, peppers, and lots more.  We use the best seeds we can find (heirloom/open-pollinated in most cases), some we have saved ourselves and most others we buy from our favorite <a href="https://natureandnurtureseeds.com">seed farm</a> in Michigan.  Pre-orders are encouraged early in the year and we'll have them ready for pick-up in May once it is time to plant them out into your garden.</p> 
+                        <img src="assets/tomato-seedlings.jpeg" alt="dozens of young tomato seedlings grow in small pots arranged in trays" class="set-in-image">
+                        <img src="assets/seedlings-front.jpeg" alt="large seedlings lined up in front of a store-front window" class="set-in-image">
+                    </div>
+                </details>
+                <details>
+                    <summary>Outdoor Growing</summary>
+                    <div class="tab-text">
+                        <p>Part of what we hope to do by putting a farm in the middle of the city is to experiment with how space is used. This means figuring out how to farm an indoor space that was once a yoga studio, and before that several restaurants, and before that a gas station! It also means thinking critically about our outdoor space and how it can best serve us, our neighborhood, and our larger community. When Plant Lab first moved onto this corner, almost 50% of the property was dedicated to parking . . . that is too much!</p> 
+                        <p>In 2022 we started reclaiming an area of the parking lot, turning it into a tiny flower farm.</p>
+                        <img class="set-in-image" src="assets/flower-farm-before.jpeg" alt="an empty parking lot in front of a building">
+                            <p class="img-cap">Before</p>
+                        <img class="set-in-image" src="assets/flower-farm-spring.jpeg" alt="young flowers grow ina rectangular patch in the middle of a parking lot">
+                            <p class="img-cap">After</p>
+                        <p>On another portion of the property we tend a certified butterfly garden, which was carefully researched and planted by the previous owner. If you come and check it out, you'll find a number of beautiful native species and a TON of pollinators all summer long.</p>
+                    </div>
+                </details>
+            </div>  
+        </main>
+        <footer>
+            <p><a href="wholesale.html">Wholesale Inquiries</a></p>
+            <p>208 W. 18th St.<br>Holland, MI<br>616.566.7672</p>
+            <p class="copyright">Copyright © 2023 Plant Lab LLC</p>
+        </footer>   
+        <script>
+            const details = document.querySelectorAll('details');
+            details.forEach((targetDetail) => {
+                targetDetail.addEventListener('click', () => {
+                    details.forEach((detail) => {
+                        if (detail !== targetDetail) {
+                            detail.removeAttribute('open');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
