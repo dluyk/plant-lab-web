@@ -295,6 +295,18 @@ footer {
     width: 100%;
     height: auto;
     border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.img-cap {
+    margin-top: -15px;;
+    margin-bottom: 20px;
+}
+
+.end-img {
+    width: 120%;
+    margin: 30px -20px;
+    height: fit-content;
 }
 
 .wholesale-form {
