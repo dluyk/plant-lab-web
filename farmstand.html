@@ -15,7 +15,7 @@
             <nav>
                 <ul class="main-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="operations.html">Operations</a></li>
+                    <li><a href="CSA.html">CSA</a></li>
                     <li><a href="farmstand.html">Farmstand</a></li>
                     <li id="last-nav-item"><a href="FAQ.html">FAQ</a></li>
                 </ul>
@@ -23,70 +23,16 @@
         </header>
         <main>
             <h1>Farmstand</h1>
-            <p class="overview">Most of the Plant Lab building is dedicated to growing space, but in the front room you'll find our farmstand. It's just like a roadside farmstand, except it's not along a road, and it's inside, and it operates year round . . . our farmstand is where our neighbors can pick up produce, garden seedlings, cut flowers, or other items available for purchase. </p>
-            <p class="overview">If you are a restaurant or other organization interested in bulk/wholesale, please <a href="wholesale.html">inquire here</a>.</p>
-            <div class="tabs">
-                <details open>
-                    <summary>CSA Shares</summary>
-                    <div class="tab-text">
-                        <p>If you want to eat fresh local lettuce, microgreens, and herbs—and support Plant Lab as part of our neighborhood food system—our CSA greens share is for you. A greens share (or, as we like to call it, Garden Candy) will contain varying types of microgreens (like broccoli or radish mircros), shoots (like pea or buckwheat shoots), cooking greens (like kale or bok choy), and leaf lettuce varieties. We'll occasionally include herbs or other extras as we experiment with new things. We offer share options based on frequency and quantity, see options below.</p> 
-                        <img class="set-in-image" src="assets/cabbage-micro-close.jpeg" alt="view from above bright green cabbage microgreens growing close together">
-                        <p>Shares are packed for you to pickup at your convenience at the farmstand, which is typically open each week on Tuesday, Wednesday, and Thursday, 9am-9pm.</p>
-                        <p><strong>Share options:</strong> You select the number of items in your share (2, 3, or 4), and how often you'd like to pick up (every week, OR, twice a month—in the 1st and 3rd week).</p>
-                        <ul>
-                            <li>2 Items : $10 per pickup</li>
-                            <li>3 Items : $14.50 per pickup</li>
-                            <li>4 Items : $19 per pickup</li>
-                        </ul>   
-                        <p>note: We bill monthly for the number of shares we deliver so some months will have 5 weekly shares. We also do take weeks off once in a while, and we don't charge for those weeks.</p>
-                        <p><strong>Sign up now!</strong>  After you complete the form below, we will reach out to confirm your subscription and gather billing information.</p>
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4B1krLARRSLQLZ7uv0TXDQ2k0jyZWlrScJMyEjI7915g30Q/viewform?embedded=true" width="350" height="1775" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </div>
-                </details>
-                <details>
-                    <summary>Self-Service</summary>
-                    <div class="tab-text">
-                        <p class="open-hours">Open Tuesday, Wednesday, Thursday 9am-9pm</p>
-                        <p>In the front, there is a fridge setup for self-serve purchases. It's a great option if you aren't ready for a CSA committment or just want to try something new.</p>
-                        <img class="set-in-image" src="assets/fridgeful.jpg" alt="packaged green and red microgreens are stacked in a small display fridge">
-                        <p>We'll have a variable selection of microgreens, lettuce, cooking greens, herbs, and flowers available.</p>
-                            
-                            <p>How it works...</p>
-                            
-                           <ol>
-                            <li>Select items from the fridge. Availability will vary.</li>
-                            <li>Use the camera app on your smartphone to scan the QR code to access mobile checkout site.</li>
-                            <li>Checkout on your phone using the Square checkout site.</li>
-                            <li>You are done! Enjoy your greens!</li>
-                        </ol>
-                        <img class="set-in-image" src="assets/sandwich.jpeg" alt="bright green cabbage microgreens heaped on top of an open-face sandwich">
-                    </div>
-                </details>
-                <details>
-                    <summary>Online Store</summary>
-                    <div class="tab-text">
-                        <p>From time to time, Plant Lab will offer various plants, seeds, flowers, and other items for purchase or pre-order online. For example,  garden seedlings will be available to pre-order online in late winter. You can find our <a href="https://store.hollandplantlab.com/">online store here</a> (you will be redirected to a third-party host). Inventory will vary by season and whatever we are experimenting with at the time.</p> 
-                        <p>Please note: Some items are pre-orders for pickup at later dates. Pre-orders or purchases are available for pickup at our farm in Holland.  We do not ship or deliver items at this time. (If you are looking to order produce online for home delivery we do sell a small selection through <a href="https://marketwagon.com/collections?vendor=12534&trk=pj87749j&wagonId=82">Market Wagon</a>, an online farmers' market.)</p>
-                        <img class="set-in-image" src="assets/tomato-seedlings-close-2.jpeg" alt="close-up of young tomato seedlings">
-                    </div>
-                </details>
-            </div>  
+            <section class="intro">
+                <p>Most of the Plant Lab building is dedicated to growing space, but in the front room you'll find our farmstand. It's just like a roadside farmstand, except it's inside, and it operates year round. There is a fridge and checkout set up for self-serve purchases. It's a great option if you aren't ready for a CSA committment or just want to try something new. We'll have a variable selection of microgreens, lettuce, cooking greens, herbs, and flowers available.</p>
+                <p>Open Tuesday, Wednesday, Thursday 9am-9pm.</p>
+                <div class="photo-container"><img src="assets/farmstand-fridge.jpg" alt="an ipad on a shelf next to a small fridge full of packaged salad greens"></div>
+            </section>
         </main>
         <footer>
             <p><a href="wholesale.html">Wholesale Inquiries</a></p>
             <p>208 W. 18th St.<br>Holland, MI<br>616.566.7672</p>
             <p class="copyright">Copyright © 2023 Plant Lab LLC</p>
         </footer>   
-        <script>
-            const details = document.querySelectorAll('details');
-            details.forEach((targetDetail) => {
-                targetDetail.addEventListener('click', () => {
-                    details.forEach((detail) => {
-                        if (detail !== targetDetail) {
-                            detail.removeAttribute('open');
-                        }
-                    });
-                });
-            });
-        </script>
+        
     </body>
