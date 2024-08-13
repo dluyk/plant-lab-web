@@ -23,38 +23,16 @@
         </header>
         <main>
             <h1>Farmstand</h1>
-            <p class="overview">Most of the Plant Lab building is dedicated to growing space, but in the front room you'll find our farmstand. It's just like a roadside farmstand, except it's not along a road, and it's inside, and it operates year round . . . our farmstand is where our neighbors can pick up produce, garden seedlings, cut flowers, or other items available for purchase. In the front, there is a fridge setup for self-serve purchases. It's a great option if you aren't ready for a CSA committment or just want to try something new.</p>            
-                    <div>
-                        <p class="open-hours">Open Tuesday, Wednesday, Thursday 9am-9pm</p>
-                        <p></p>
-                        <p>We'll have a variable selection of microgreens, lettuce, cooking greens, herbs, and flowers available.</p>
-                            
-                            <p>How it works...</p>
-                            
-                           <ol>
-                            <li>Select items from the fridge. Availability will vary.</li>
-                            <li>Use the camera app on your smartphone to scan the QR code to access mobile checkout site.</li>
-                            <li>Checkout on your phone using the Square checkout site.</li>
-                            <li>You are done! Enjoy your greens!</li>
-                        </ol>
-                    </div>
-                
+            <section class="intro">
+                <p>Most of the Plant Lab building is dedicated to growing space, but in the front room you'll find our farmstand. It's just like a roadside farmstand, except it's inside, and it operates year round. There is a fridge and checkout set up for self-serve purchases. It's a great option if you aren't ready for a CSA committment or just want to try something new. We'll have a variable selection of microgreens, lettuce, cooking greens, herbs, and flowers available.</p>
+                <p>Open Tuesday, Wednesday, Thursday 9am-9pm.</p>
+                <div class="photo-container"><img src="assets/farmstand-fridge.jpg" alt="an ipad on a shelf next to a small fridge full of packaged salad greens"></div>
+            </section>
         </main>
         <footer>
             <p><a href="wholesale.html">Wholesale Inquiries</a></p>
             <p>208 W. 18th St.<br>Holland, MI<br>616.566.7672</p>
             <p class="copyright">Copyright © 2023 Plant Lab LLC</p>
         </footer>   
-        <script>
-            const details = document.querySelectorAll('details');
-            details.forEach((targetDetail) => {
-                targetDetail.addEventListener('click', () => {
-                    details.forEach((detail) => {
-                        if (detail !== targetDetail) {
-                            detail.removeAttribute('open');
-                        }
-                    });
-                });
-            });
-        </script>
+        
     </body>

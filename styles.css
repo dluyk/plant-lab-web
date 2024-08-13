@@ -36,6 +36,29 @@ a:active {
     text-decoration: underline;
 }
 
+.signup-click {
+    display: block;
+    margin: 30px auto;
+    font-weight: 900;
+    color: rgb(18, 18, 18);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 200px;
+    padding: 10px;
+    background-color: rgb(190, 255, 255);
+}
+
+.signup-click:hover{
+    background-color: rgb(240, 255, 240);
+    text-decoration: none;
+}
+
+.signup-click:active{
+    text-decoration: underline;
+}
+
+
 
 
 /* subheads */
@@ -62,7 +85,7 @@ h3 {
     margin-block-end: 3px;
 }
 
-/* body text */
+/* general text */
 p {
     margin-block-start: 0;
 }
@@ -76,6 +99,19 @@ p {
 .no-hyphen {
     hyphens:none;
 }
+
+.photo-container {
+    max-width: 300px;
+    margin: 50px auto;
+    border: 3px solid honeydew;
+}
+
+.photo-container img {
+    width: 100%;
+    margin-bottom: -5.5px;
+  
+}
+
 
 /* header */
 .main-nav {
@@ -115,14 +151,17 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
     font-size: 1rem;
-
 }
 
 .copyright {
     float: right;
     margin-top: -32px;
     margin-bottom: 20px;
+}
 
+.wholesale-form {
+    margin: auto;
+    text-align: center;
 }
 
 /* homepage */
@@ -134,14 +173,12 @@ footer {
 
 .cover-image {
     background-image: url(assets/trays-small.jpg);
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: darken;
     padding-top: 40px;
     padding-bottom: 20px;
     margin: auto;
     max-width: 960px;
-}
-
-.image-overlay {
-    background-color: rgb(18, 18, 18, .5);
 }
 
 .cover {
@@ -154,35 +191,12 @@ footer {
     line-height: 110%;
 }
 
-/* .prompt {
- text-align: center;
- font-weight: 500;
- letter-spacing: .03em;
-} */
-
-.cover-links-container{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 400px;
-}
-
 .prompt-link {
     color: rgb(190, 255, 255);
 }
 
 .prompt-link:hover {
     text-decoration-color: rgb(0, 138, 138);
-}
-
-.paren {
-    display: block;
-    text-transform: lowercase;
-    font-weight: 100;
-    font-size: .95rem;
-    font-style: italic;
-    letter-spacing: normal;
-    line-height: 150%;
 }
 
 .email-signup {
@@ -193,12 +207,12 @@ footer {
 }
 
 /* accordion */
-.abstract, .qs {
+.intro, .qs {
     max-width: 700px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.abstract h2 {
+.intro h2 {
     text-align: left;
     margin-block-end: 4px;
     font-weight: 600;
@@ -237,81 +251,4 @@ footer {
     display: block;
     max-width: 60%;
     margin: 40px auto;
-}
-
-/* tabs */
-
-.overview {
-    width: 85%;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-.tabs {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    color: rgb(18, 18, 18);
-    position: relative;
-    background-color: rgb(240, 255, 240, .8);
-    margin: auto;
-    max-width: 700px;
-}
-
-
-.tabs summary {
-    list-style: none;
-    cursor: pointer;
-    text-align: center;
-    padding: 1em;
-    text-transform: uppercase;
-}
-
-.tabs details > summary::-webkit-details-marker {
-    display: none;
-  }
-
-.tabs details {
-    width: 33.33%;
-}
-
-.tabs details[open] {
-    background-color: rgb(240, 255, 240);
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
-}
-
-.tabs details[open] summary{
-    font-weight: 500;
-}
-
-.tabs .tab-text {
-    position: absolute;
-    max-width: 100%;
-	left: 0;
-	right: 0;
-    padding: 1em;
-    background-color: rgb(240, 255, 240);
-}
-
-.set-in-image {
-    width: 100%;
-    height: auto;
-    border: 2px solid black;
-    margin-bottom: 10px;
-}
-
-.img-cap {
-    margin-top: -15px;;
-    margin-bottom: 20px;
-}
-
-.end-img {
-    width: 120%;
-    margin: 30px -20px;
-    height: fit-content;
-}
-
-.wholesale-form {
-    margin: auto;
-    text-align: center;
 }
